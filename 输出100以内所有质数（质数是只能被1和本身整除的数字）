@@ -1,0 +1,25 @@
+输出100以内所有质数（质数是只能被1和本身整除的数字）
+<!--10.	输出100以内所有质数（质数是只能被1和本身整除的数字）-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			document.write("2</br>");
+			for(var i=2;i<100;i++){
+				for(var j=2;j<i;j++){
+					if(i%j==0){
+						break;//一旦余数等于零就跳出循环
+					}else{
+						document.write(i+"</br>");
+						break;//循环完之后也要跳出循环
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+
