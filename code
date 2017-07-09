@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var count=0,sum=0,max,min;
+			while(true){
+				num=prompt("输入n个数：")*1;
+				if(num==0){
+					break;
+				}//输入n个数，输入0时停止
+				//var count=0,sum=0,max,min;//不能将变量定义在while循环里面
+				//时局部变量，只能在函数内部起作用
+				//应该定义在外部
+				if(count==0){
+					max=num;
+					min=num;
+				}
+				sum=sum+num;
+				count++;
+				max=num>max?num:max;
+				min=num<min?num:min;
+			}
+			//alert(sum/count);
+			document.write("平均值："+sum/count+"</br>");
+			document.write("最小值："+min+"</br>");			
+			document.write("最大值："+max+"</br>");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
