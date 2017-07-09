@@ -1,0 +1,58 @@
+输入正整数n，输出数列中的第n个数字（数列：1，1，2，3，5，8，13…）
+Ps:利用pre和next的递推和赋值的关系
+<!--8.输入正整数n，输出数列中的第n个数字（数列：1，1，2，3，5，8，13…）
+//斐波那契数列-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+	/*//a  b
+	    1  1 
+	     a  b
+	     2  3
+	        a  b
+	        3  5
+	           a  b 
+	           5  8
+	              a  b 
+	              8  13*/
+	//通过寻找规律发现输出的是b
+	//这里运用的是两个变量，依次赋值和类推的关系
+var n=prompt("请输入正整数n：")*1;
+	var a=1,b=1;
+	var temp;
+	for(i=1;i<n;i++){//这里循环次数已知。所以采用for循环
+		//这里i要从1开始，不能从0开始，因为第一个数和第二个数已经定了，所以第一个数就不能够参与循环
+		//同样等号也是一样的道理
+		//i<n不能取等号
+		//var
+		    temp=a;
+		    a=b;
+		    b=temp+a;
+	}
+	document.write(a);
+	
+
+/*	var prve = 1;
+var next = 1;
+var temp;
+
+var num = prompt("请输入一个正整数：")*1;  
+for(var i=1;i< num;i++){
+	temp = prve;
+	prve = next ;
+  	next = temp + next;
+}
+
+document.write(prve);
+*/
+	              
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+
