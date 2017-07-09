@@ -1,0 +1,33 @@
+<!--9.	在一个笼子里面有鸡和兔两种动物，已知有30个头和90只脚，计算鸡和兔分别有多少只-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+	//chicken+rabbit=30
+	//2*chicken+4*rabbit=90
+	//chicken<30
+	//rabbit<30
+	//var chicken_leg;
+			//var rabbit_leg;
+			//ch+rh=30
+			//cl+rl=90
+			//ch=0 rh=30-0;//最后只有一个变量
+	var chicken_head;
+	var rabbit_head;
+	for(chicken_head=0;chicken_head<=30;chicken_head++){
+		rabbit_head=30-chicken_head;
+		if(2*chicken_head+4*rabbit_head==90){
+			document.write("鸡有"+chicken_head+"只"+"</br>");
+			document.write("兔有"+rabbit_head+"只");
+			
+		}
+	}
+	
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
