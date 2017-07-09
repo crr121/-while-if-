@@ -1,0 +1,31 @@
+<!--//输入正整数n，判断n是否为质数（质数是只能被1和本身整除的数字）-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//输入正整数n，判断n是否为质数（质数是只能被1和本身整除的数字）
+			num=prompt("输入一个正整数：")*1;
+			if(num<=0){
+				alert("您的输入有误！！");//保证程序的健壮性
+			}
+			if(num==2){
+				document.write(num+"是质数");//保证程序的健壮性
+			}
+			if(num==1){
+				document.write(num+"不是质数");//保证程序的健壮性
+			}
+			for(var i=2;i<num;i++){
+				if(i%2==0){
+					document.write(num+"不是质数");
+					break;//这里需要有一个break当只要有一个余数等于0就跳出循环
+				}else{
+					document.write(num+"是质数");
+				}
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
