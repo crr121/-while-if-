@@ -1,0 +1,21 @@
+计算1+10+100+1000+10000的结果
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var num=1,sum=0;
+			for(var i=1;i<=4;i++){
+				num=num*10;//后一个数时钱一个数的10倍
+				//用for循环表示后一个数
+				//alert(num);//检验是否正确
+				sum=sum+num;
+			}
+			document.write("和为："+sum);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+
