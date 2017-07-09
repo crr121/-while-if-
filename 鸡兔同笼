@@ -1,3 +1,6 @@
+Ps:不断减少未知数的个数
+Ps: rabbit_head=30-chicken_head不能放在if语句里面
+
 <!--9.	在一个笼子里面有鸡和兔两种动物，已知有30个头和90只脚，计算鸡和兔分别有多少只-->
 <!DOCTYPE html>
 <html>
