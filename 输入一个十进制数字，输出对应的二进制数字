@@ -1,0 +1,46 @@
+输入一个十进制数字，输出对应的二进制数字
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script>
+			var num=prompt("输入一个十进制数：")*1;
+			var initial=num;
+			var remainder;
+			//var quotient;
+			var reverse=" ";//定义一个字符串用来存储余数
+			//商和余数也是一个迭代的过程
+			/*num    quotient  remainder
+			11        5          1
+			5         2          1
+			2         1          0
+			result:1011*/
+			while(true){
+				if(num<2){
+					break;
+				}
+				
+			remainder=num%2;
+			//quotient=(num-remainder)/2;//这里quotient和num是一个迭代的过程
+			//所以就不需要再定义一个quotient
+			//可以直接由num-remainder来表示quotient
+			num=(num-remainder)/2;
+			reverse=remainder+reverse;//这里不是reverse+remainder
+			//而是remainder+reverse：表示来一个余数就放在上一个字符串的前面
+			/*if(quotient==1){
+				document.write("1"+reverse);
+			}*///这里不能设置为quotient为1为终止条件，因为1/2的时候quotient为0，永远不能为1
+			//否则会陷入死循环
+			}
+			
+			document.write(initial+"的二进制为："+1+reverse);
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+
+
